@@ -2,18 +2,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
-public class CharacterMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [Header("Gravity")]
-    [SerializeField] private bool _hasGravity = true;
     [SerializeField] private float _gravityAcceleration = -9.81f;
     [SerializeField] private float _maxVerticalVelocity = 20f;
     [SerializeField] private float _jumpHeight = 1f;
 
     [Header("Speed")] [SerializeField] private float _speed = 8f;
 
+    private PlayerManager _playerManager;
     private CharacterController _characterController;
     
     private Vector3 _velocity = Vector3.zero;
@@ -22,45 +23,34 @@ public class CharacterMovement : MonoBehaviour
 
     private void Start()
     {
+        _playerManager = GetComponent<PlayerManager>();
         _characterController = GetComponent<CharacterController>();
     }
 
     private void Update()
-    {
-        Move();
-    }
-
-    public void SimpleMove(Vector3 direction)
-    {
-        var grounded = _characterController.SimpleMove(direction);
-        Debug.Log($"Character grounded: {grounded}");
-    }
-    
-    void Move()
     {
         _grounded = _characterController.isGrounded;
         if (_grounded && _velocity.y < 0)
         {
             _velocity.y = 0f;
         }
-
-        var move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        _characterController.Move((move  * (_speed * Time.deltaTime)));
-
-        // Reposition player forward transform
-        if (move != Vector3.zero)
-        {
-            gameObject.transform.forward = move;
-        }
-
+        
+        // Movement
+        var input = _playerManager.FpvMoveAction.action.ReadValue<Vector2>();
+        var movement = transform.forward * input.y;
+        movement += transform.right * input.x;
+        movement.Normalize();
+        movement.y = 0;
+        _characterController.Move((movement  * (_speed * Time.deltaTime)));
+        
         // Changes the height position of the player..
-        if (Input.GetButtonDown("Jump") && _grounded)
+        if (_playerManager.FpvJumpAction.action.IsPressed() && _grounded)
         {
             _velocity.y += Mathf.Sqrt(_jumpHeight * -3.0f * _gravityAcceleration);
         }
         _velocity.y += _gravityAcceleration * Time.deltaTime;
         
-        // Cap velocity
+        // Cap y velocity
         _velocity.y = Mathf.Clamp(_velocity.y, -_maxVerticalVelocity, _maxVerticalVelocity);
         
         _characterController.Move(_velocity * Time.deltaTime);
