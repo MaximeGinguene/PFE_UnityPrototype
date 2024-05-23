@@ -149,8 +149,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5664890690300639469}
-  - component: {fileID: 9172777990880070128}
   - component: {fileID: 1635886833899461187}
+  - component: {fileID: 9172777990880070128}
   - component: {fileID: 7387599154718814563}
   - component: {fileID: 4032164650057098781}
   m_Layer: 0
@@ -176,26 +176,6 @@ Transform:
   - {fileID: 5774915018420625419}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9172777990880070128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575022747568686559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f85aed0bde6d53240acd741706c925f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerMovement: {fileID: 7387599154718814563}
-  _playerView: {fileID: 4032164650057098781}
-  _fpvMoveAction: {fileID: 2146856820540441256, guid: 790856d4640633c46ad5131c49dcfff8,
-    type: 3}
-  _fpvJumpAction: {fileID: -8443317767507556289, guid: 790856d4640633c46ad5131c49dcfff8,
-    type: 3}
-  _fpvViewAction: {fileID: 7232936105066852595, guid: 790856d4640633c46ad5131c49dcfff8,
-    type: 3}
 --- !u!143 &1635886833899461187
 CharacterController:
   m_ObjectHideFlags: 0
@@ -222,6 +202,26 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &9172777990880070128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575022747568686559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f85aed0bde6d53240acd741706c925f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerMovement: {fileID: 7387599154718814563}
+  _playerView: {fileID: 4032164650057098781}
+  _fpvMoveAction: {fileID: 2146856820540441256, guid: 790856d4640633c46ad5131c49dcfff8,
+    type: 3}
+  _fpvJumpAction: {fileID: -8443317767507556289, guid: 790856d4640633c46ad5131c49dcfff8,
+    type: 3}
+  _fpvViewAction: {fileID: 7232936105066852595, guid: 790856d4640633c46ad5131c49dcfff8,
+    type: 3}
 --- !u!114 &7387599154718814563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,9 +234,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e298e4194dad71418b981dd230306c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gravityAcceleration: -9.81
+  _gravityAcceleration: -20
   _maxVerticalVelocity: 20
   _jumpHeight: 0.75
+  _jumpVelocityModifier: 3
   _speed: 6
 --- !u!114 &4032164650057098781
 MonoBehaviour:

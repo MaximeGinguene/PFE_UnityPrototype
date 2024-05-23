@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _gravityAcceleration = -9.81f;
     [SerializeField] private float _maxVerticalVelocity = 20f;
     [SerializeField] private float _jumpHeight = 1f;
+    [SerializeField] private float _jumpVelocityModifier = 3.0f;
 
     [Header("Speed")] [SerializeField] private float _speed = 8f;
 
@@ -46,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         // Changes the height position of the player..
         if (_playerManager.FpvJumpAction.action.IsPressed() && _grounded)
         {
-            _velocity.y = Mathf.Sqrt(_jumpHeight * -3.0f * _gravityAcceleration);
+            _velocity.y = Mathf.Sqrt(_jumpHeight * -_jumpVelocityModifier * _gravityAcceleration);
         }
         _velocity.y += _gravityAcceleration * Time.deltaTime;
         
