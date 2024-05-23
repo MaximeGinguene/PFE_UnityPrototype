@@ -80,8 +80,6 @@ public class AIPath : MonoBehaviour
             }
             else targetIndex = _knots.Count - 1;
         }
-
-        Debug.Log(targetIndex);
         return _knots[targetIndex];
     }
 }

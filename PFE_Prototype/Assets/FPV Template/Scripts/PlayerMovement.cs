@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         // Changes the height position of the player..
         if (_playerManager.FpvJumpAction.action.IsPressed() && _grounded)
         {
-            _velocity.y += Mathf.Sqrt(_jumpHeight * -3.0f * _gravityAcceleration);
+            _velocity.y = Mathf.Sqrt(_jumpHeight * -3.0f * _gravityAcceleration);
         }
         _velocity.y += _gravityAcceleration * Time.deltaTime;
         

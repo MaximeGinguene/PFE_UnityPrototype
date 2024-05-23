@@ -7,7 +7,7 @@ public class PlayerView : MonoBehaviour
 {
     [SerializeField] private bool _confineCursor = true;
     [SerializeField] private Transform _cameraTransform;
-    [SerializeField] private float _xRotationClamp;
+    [SerializeField] private float _xDownRotation = 60, _xUpRotation = 80;
 
     private PlayerManager _playerManager;
     
@@ -33,7 +33,7 @@ public class PlayerView : MonoBehaviour
         
         // X Rotation
         _xRotation -= viewInput.y;
-        _xRotation = Mathf.Clamp(_xRotation, -_xRotationClamp, _xRotationClamp);
+        _xRotation = Mathf.Clamp(_xRotation, -_xUpRotation, _xDownRotation);
 
         _cameraTransform.localRotation = Quaternion.Euler(Vector3.right * _xRotation);
     }

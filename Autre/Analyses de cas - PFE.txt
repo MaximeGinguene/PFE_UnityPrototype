@@ -1,0 +1,9 @@
+Analyses de cas :
+
+- Inverse kinematics (exemple anim mixamo avec target d'un élément)
+
+- IA (exemple en prog 2D / GD)
+
+- Manequins et robes en 3D ou 2D plaqué (exemple dans le moteur) 
+
+- Diorama exploration en FPS avec des assets internet pour tester les rendus UE et Unity
