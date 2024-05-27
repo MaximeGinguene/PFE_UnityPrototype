@@ -51,6 +51,9 @@ De nombreux éléments du PEZ on pu être récupérés comme base de travail pou
 #### HDRP
 [The definitive guide to lighting in the High Definition Render Pipeline](https://cdn.unity3d.com/media/The%20definitive%20guide%20to%20lighting%20in%20the%20High%20Definition%20Render%20Pipeline.pdf?elqTrackId=20ece42fc10c4251932de25b6bad97da&elqaid=3837&elqat=2)
 Template HDRP
+#### IA
+Lien vidéos / tutos / articles navmesh
+Idem state machines dédiées IA
 ### Scope technique
 #### I can do
 Les éléments réalisés dans de précédents projets, principalement le PEZ :
