@@ -52,3 +52,15 @@ De nombreux éléments du PEZ on pu être récupérés comme base de travail pou
 [The definitive guide to lighting in the High Definition Render Pipeline](https://cdn.unity3d.com/media/The%20definitive%20guide%20to%20lighting%20in%20the%20High%20Definition%20Render%20Pipeline.pdf?elqTrackId=20ece42fc10c4251932de25b6bad97da&elqaid=3837&elqat=2)
 Template HDRP
 ### Scope technique
+#### I can do
+Les éléments réalisés dans de précédents projets, principalement le PEZ :
+- Déplacement à la première personne
+- Observation à la première personne
+- Interaction à la première personne
+- Navigation des IA
+- 
+#### Must have
+- State machine modulaire pour la gestion des IA
+- Création de patterns de navigation d'ennemis
+- UI/UX intégrée à l'expérience de jeu et qui ne casse pas l'immersion
+- 
