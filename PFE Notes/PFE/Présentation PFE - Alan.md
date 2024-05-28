@@ -22,9 +22,9 @@ Faire des mockups sur base de screenshots dans Unity ?
 ## PROGRAMMATION
 ### Justification moteur :
 #### Unity VS Unreal
-Possibilité de scripter le moteur de rendu pour coller au rendu demandé par la Direction Artistique, également des performances meilleures avec Unity URP qu'avec Unreal.
+Il est plus simple avec les connaissances de l'équipe de régler et modifier le moteur de rendu d'Unity pour coller au rendu demandé par la Direction Artistique, également des performances meilleures avec Unity URP qu'avec Unreal.
 #### URP VS HDRP
-Le pipeline de rendu URP est connu des membres de l'équipe et sa mise en place peut être gérée de la programmation à l'intégration par les autres pôles
+Le pipeline de rendu URP est connu des membres de l'équipe et sa mise en place peut être gérée de la programmation à l'intégration par les autres pôles. Les performances plus intéressantes d'URP ouvrent également le jeu à un plus grand parc de PC.
 
 --> Ils restent une piste si la direction artistique requiert des éléments inhérents à ces moteurs, dans ce cadre un passage à HDRP peut être envisagé car il permet de garder l'entièreté du code gameplay pour ne changer que le traitement graphique du moteur.
 #### Processus créatif et démonstration de nos capacités à adapter URP à la direction artistique :
@@ -52,8 +52,14 @@ De nombreux éléments du PEZ on pu être récupérés comme base de travail pou
 [The definitive guide to lighting in the High Definition Render Pipeline](https://cdn.unity3d.com/media/The%20definitive%20guide%20to%20lighting%20in%20the%20High%20Definition%20Render%20Pipeline.pdf?elqTrackId=20ece42fc10c4251932de25b6bad97da&elqaid=3837&elqat=2)
 Template HDRP
 #### IA
-Lien vidéos / tutos / articles navmesh
-Idem state machines dédiées IA
+State Machine :
+- https://unity.com/how-to/develop-modular-flexible-codebase-state-programming-pattern
+- https://youtu.be/NnH6ZK5jt7o
+- https://youtu.be/eR-AGr5nKEU
+AI Navigation :
+- https://learn.unity.com/tutorial/unity-navmesh#
+- https://learn.unity.com/search?k=%5B%22q%3ANavigation%22%5D
+- https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/index.html
 ### Scope technique
 #### I can do
 Les éléments réalisés dans de précédents projets, principalement le PEZ :
@@ -61,9 +67,11 @@ Les éléments réalisés dans de précédents projets, principalement le PEZ :
 - Observation à la première personne
 - Interaction à la première personne
 - Navigation des IA
-- 
 #### Must have
 - State machine modulaire pour la gestion des IA
 - Création de patterns de navigation d'ennemis
 - UI/UX intégrée à l'expérience de jeu et qui ne casse pas l'immersion
-- 
+- Inventaire de gadgets
+- Metrics du character et des ennemis variable en cours de jeu
+#### Perfect Scope
+- Animation IK à la première personne
