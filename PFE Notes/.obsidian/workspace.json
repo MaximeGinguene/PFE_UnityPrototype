@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PFE/Présentation PFE - Alan.md",
+                "file": "PFE/Idées de nom.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PFE/Présentation PFE - Alan.md",
+                "file": "PFE/Idées de nom.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PFE/Présentation PFE - Alan.md",
+                "file": "PFE/Idées de nom.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PFE/Présentation PFE - Alan.md"
+                "file": "PFE/Idées de nom.md"
               }
             }
           }
@@ -147,8 +147,9 @@
   },
   "active": "9cc10e9dcebc4322",
   "lastOpenFiles": [
-    "Screenshots/Screenshot 2024-05-27 172908.png",
     "PFE/Présentation PFE - Alan.md",
+    "PFE/Idées de nom.md",
+    "Screenshots/Screenshot 2024-05-27 172908.png",
     "Screenshots/Screenshot 2024-05-22 035134.png",
     "PFE/Architecture.canvas",
     "Screenshots/Screenshot 2024-05-24 132109.png",
