@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3c0a8409b817e6ed",
+        "id": "96ffa0fac5e0aa30",
         "type": "tabs",
         "children": [
           {
-            "id": "9cc10e9dcebc4322",
+            "id": "dd89a87f0e60beca",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -133,7 +133,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -145,17 +146,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9cc10e9dcebc4322",
+  "active": "7f9ec0d62a738c45",
   "lastOpenFiles": [
     "PFE/Présentation PFE - Alan.md",
+<<<<<<< Updated upstream
     "PFE/Idées de nom.md",
     "Screenshots/Screenshot 2024-05-27 172908.png",
     "Screenshots/Screenshot 2024-05-22 035134.png",
+=======
+    "PFE/Screenshots/Screenshot 2024-05-27 172908.png",
+    "PFE/Screenshots/Screenshot 2024-05-22 035134.png",
+>>>>>>> Stashed changes
     "PFE/Architecture.canvas",
-    "Screenshots/Screenshot 2024-05-24 132109.png",
-    "Screenshots/Screenshot 2024-05-24 133347.png",
-    "Screenshots",
-    "Screenshots/Screenshot 2024-05-17 135116.png",
+    "PFE/Screenshots/Screenshot 2024-05-24 132109.png",
+    "PFE/Screenshots/Screenshot 2024-05-24 133347.png",
+    "PFE/Screenshots",
+    "PFE/Screenshots/Screenshot 2024-05-17 135116.png",
     "TrainRender.jpg",
     "PFE/TrainRender.jpg",
     "Untitled.md",
