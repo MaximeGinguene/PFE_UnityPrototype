@@ -1,22 +1,18 @@
 {
   "main": {
-    "id": "d307058547bbd6ca",
+    "id": "21455bc2bd80d56b",
     "type": "split",
     "children": [
       {
-        "id": "96ffa0fac5e0aa30",
+        "id": "d8f4060643d96a18",
         "type": "tabs",
         "children": [
           {
-            "id": "dd89a87f0e60beca",
+            "id": "4d1d901365c4d369",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PFE/Idées de nom.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -25,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "3698dc0c333f67c5",
+    "id": "9cf59d836f32ad8c",
     "type": "split",
     "children": [
       {
-        "id": "aca580696cbd57d1",
+        "id": "c215fecfa1fafc0e",
         "type": "tabs",
         "children": [
           {
-            "id": "7f9ec0d62a738c45",
+            "id": "4dd143d4d53de43e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +39,7 @@
             }
           },
           {
-            "id": "e5cb2291df834c10",
+            "id": "56bfabb49a0f3376",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +54,7 @@
             }
           },
           {
-            "id": "475738a4eed788e8",
+            "id": "9cbc3fcb6e87cc5a",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -72,20 +68,19 @@
     "width": 300
   },
   "right": {
-    "id": "a6836cfb13235d7c",
+    "id": "c2ff9d69ca1adf1d",
     "type": "split",
     "children": [
       {
-        "id": "26fba5e29a8c444e",
+        "id": "de89cccecdfed49b",
         "type": "tabs",
         "children": [
           {
-            "id": "0820be132ede0930",
+            "id": "c8187fe265311a94",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PFE/Idées de nom.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +92,18 @@
             }
           },
           {
-            "id": "dda7e2f7b6beb072",
+            "id": "178df2eb70f0a85c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PFE/Idées de nom.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "0907751eaeabccbb",
+            "id": "bff7879c5eb30458",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,13 +114,11 @@
             }
           },
           {
-            "id": "2ff5f81ba83033a1",
+            "id": "30c5c2669521a4fd",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "PFE/Idées de nom.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,32 +138,6 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7f9ec0d62a738c45",
-  "lastOpenFiles": [
-    "PFE/Présentation PFE - Alan.md",
-<<<<<<< Updated upstream
-    "PFE/Idées de nom.md",
-    "Screenshots/Screenshot 2024-05-27 172908.png",
-    "Screenshots/Screenshot 2024-05-22 035134.png",
-=======
-    "PFE/Screenshots/Screenshot 2024-05-27 172908.png",
-    "PFE/Screenshots/Screenshot 2024-05-22 035134.png",
->>>>>>> Stashed changes
-    "PFE/Architecture.canvas",
-    "PFE/Screenshots/Screenshot 2024-05-24 132109.png",
-    "PFE/Screenshots/Screenshot 2024-05-24 133347.png",
-    "PFE/Screenshots",
-    "PFE/Screenshots/Screenshot 2024-05-17 135116.png",
-    "TrainRender.jpg",
-    "PFE/TrainRender.jpg",
-    "Untitled.md",
-    "Architecture Programmation.md",
-    "PFE/Architecture Programmation.md",
-    "2024-05-27.md",
-    "DIRECTION.md",
-    "ART.md",
-    "google.com.md",
-    "PFE",
-    "Welcome.md"
-  ]
+  "active": "4d1d901365c4d369",
+  "lastOpenFiles": []
 }
